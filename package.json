@@ -1,0 +1,24 @@
+{
+  "name": "gcloud-sync",
+  "main": "gsync.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rosedo/npm-gcloud-sync.git"
+  },
+  "version": "1.0.5",
+  "description": "Google Cloud Storage synchronisation utility",
+  "scripts": {
+    "test": "if test -f node_modules/.bin/mocha; then node_modules/.bin/mocha test; else mocha test; fi"
+  },
+  "author": "Dominic Rose",
+  "license": "ISC",
+  "dependencies": {
+    "async": "",
+    "gcloud": "",
+    "lodash": "",
+    "mkdirp": ""
+  },
+  "devDependencies": {
+    "mocha": ""
+  }
+}

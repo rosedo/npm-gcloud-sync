@@ -1,0 +1,17 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
+
+(cd "$DIR" && eslint .) || exit 1
+(cd "$DIR" && npm test) || exit 1
+rm -r "$DIR/release" 2>/dev/null
+mkdir "$DIR/release" || exit 1
+
+# CONTAINS PRIVATE CONTENT
+mkdir "$DIR/release/test" || exit 1
+cp "$DIR/test/gsync.js" "$DIR/release/test" || exit 1
+
+cp "$DIR/gsync.js" "$DIR/release" || exit 1
+cp "$DIR/package.json" "$DIR/release" || exit 1
+cp "$DIR/README.md" "$DIR/release" || exit 1
+npm publish "$DIR/release" || exit 1

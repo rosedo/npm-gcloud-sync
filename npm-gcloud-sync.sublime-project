@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "follow_symlinks": false,
+      "path": ".",
+      "folder_exclude_patterns": [
+        "release",
+        "test/sync-bucket"
+      ],
+      "file_exclude_patterns": [
+        "npm-debug.log",
+      ],
+    },
+  ],
+  "settings": {
+    "translate_tabs_to_spaces": false,
+  },
+}

@@ -1,0 +1,19 @@
+# private
+/test/private.json
+/test/key.json
+
+# output data
+/test/sync-bucket/
+
+# built content
+/release/
+
+# npm
+/node_modules/
+/npm-debug.log
+
+# Sublime Text
+/*.sublime-workspace
+
+# OS X
+.DS_Store
